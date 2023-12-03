@@ -132,6 +132,33 @@ public class Database {
             // TODO: handle exception
         }
     }
+
+
+    /*  public Employee getEmployee(int id) {
+        try {
+            PreparedStatement ps = connection.prepareStatement("SELECT * FROM Employee WHERE id = ?");
+            ps.setInt(1, id);
+
+            ResultSet rs = ps.executeQuery();
+
+            while (rs.next()) {
+
+                String gotName = rs.getString("firstname");
+                String Lastname = rs.getString("lastname");
+                String designaString = rs.getString("Designation");
+                String email = rs.getString("email");
+                String phone = rs.getString("phone");
+                int age = rs.getInt("age");
+
+                Employee emp = new Employee(gotName, Lastname, designaString, email, phone, age);
+                return emp;
+            }
+
+        } catch (SQLException e) {
+            // TODO: handle exception
+        }
+    }         */
+
 }
 
 
